@@ -260,11 +260,11 @@ body {
       right: 10px;
     }
     .popup {
-      width: 400px;
-      height: 200px;
+      margin:auto;
       position: absolute;
-      top: 280px;
-      left: 100px;
+      top: 45%;
+      left: 32%;
+      
     }
     #tasks_container {
       
