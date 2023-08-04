@@ -13,8 +13,8 @@ body {
     height: 15vh;
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 35px;
+    /* position: relative;
+    top: 35px; */
     justify-content: space-around;
   }
   #tasks {
@@ -27,6 +27,10 @@ body {
     color: white;
     font-size: 45px;
     
+  }
+  .posi{
+    display: flex;
+    flex-direction: row;
   }
   #cardName {
     display: none;
@@ -70,14 +74,19 @@ body {
     font-size: 28px;
   }
   .popup_input {
-    width: 320px;
+    width: 75%;
     height: 36px;
     margin-left: 40px;
     font-size: 20px;
   }
+  .popupbtnsmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .popup_btn_add {
     width: 100px;
-    margin: 8px 15px 5px 75px;
+    /* margin: 8px 15px 5px 75px; */
     border: 2px solid skyblue;
     background-color: skyblue;
     border-radius: 15px;
@@ -87,7 +96,7 @@ body {
   }
   .popup_btn_delete {
     width: 100px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     border: 2px solid skyblue;
     background-color: skyblue;
     border-radius: 15px;
@@ -105,13 +114,13 @@ body {
     font-weight: bold;
   }
   #container {
-    
     padding: 0px 20px 0px 20px;
     position: relative;
     top: 45px;
-    height: 85vh;
+    /* height: 85vh; */
     margin-bottom: 20px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -153,8 +162,7 @@ body {
   }
   .todo_body {
     width: 100%;
-    height: 40vh;
-    
+    height: 26vh;
     margin-top: 5px;
   }
   .todo_btns {
@@ -233,7 +241,7 @@ body {
   }
   
  
-  @media (min-width: 500px) and (max-width: 720px) {
+  @media (max-width: 768px) {
     #tasks_text {
       position: absolute;
       top: 15px;
@@ -254,27 +262,28 @@ body {
       top: 20px;
       right: 160px;
     }
-    #add_itm {
+    /* #add_itm {
       position: absolute;
       top: 15px;
       right: 10px;
-    }
+    } */
     .popup {
       margin:auto;
       position: absolute;
-      top: 45%;
-      left: 32%;
+      top: 20%;
+      left: 0%;
+      width: 100%;
       
     }
-    #tasks_container {
-      
-      position: relative;
-      top: 50px;
-      height: 85vh;
-      margin-bottom: 20px;
-      margin-left: 100px;
-      display: flex;
+    #container {
       flex-direction: column;
-      flex-wrap: nowrap;
+      
+    }
+    .posi{
+      display: flex;
+      flex-direction: row;
+    }
+    .todo_body{
+      height: 28vh;
     }
   }
